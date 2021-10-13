@@ -9,7 +9,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
-app.use(session({secret:"key",cookie:{maxAge:6000000},resave:false,saveUninitialized:true}))
+app.use(session({secret:"key",cookie:{maxAge:600000},resave:false,saveUninitialized:true}))
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
